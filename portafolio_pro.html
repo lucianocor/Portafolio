@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luciano | Developer Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="layout-app">
+    
+    <!-- BARRA LATERAL (SIDEBAR) -->
+    <aside class="sidebar">
+      <div class="logo">
+        <span class="corchete">&lt;</span>Luciano<span class="punto">.dev</span><span class="corchete">/&gt;</span>
+      </div>
+
+      <nav class="menu-lateral">
+        <ul>
+          <li><a href="#inicio" class="enlace-nav activo">Inicio</a></li>
+          <li><a href="#proyectos" class="enlace-nav">Proyectos</a></li>
+          <li><a href="#habilidades" class="enlace-nav">Habilidades</a></li>
+          <li><a href="#contacto" class="enlace-nav btn-nav-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="contenido-principal">
+      
+      <!-- SECCIÓN HERO -->
+      <section id="inicio" class="hero">
+        
+        <!-- Columna de texto -->
+        <div class="hero-texto">
+          <div class="badge-estado">
+            <span class="punto-verde"></span>
+            Disponible para proyectos
+          </div>
+
+          <h1 class="hero-titulo">
+            Desarrollo Web & <br>
+            <span class="texto-cian">Software Seguro</span>
+          </h1>
+
+          <p class="hero-descripcion">
+            Estudiante de programación enfocado en construir aplicaciones web robustas, arquitectura limpia y buenas prácticas de seguridad.
+          </p>
+
+          <!-- Botones de Acción (Ver Proyectos + GitHub + Email) -->
+          <div class="hero-botones">
+            <a href="#proyectos" class="btn-primario">Ver Proyectos</a>
+            
+            <!-- Botón GitHub -->
+            <a href="https://github.com" target="_blank" class="btn-secundario">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              GitHub
+            </a>
+
+            <!-- Botón Mail -->
+            <a href="mailto:tuemail@ejemplo.com" class="btn-secundario">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Email
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna de Tarjeta Técnica con Foto -->
+        <div class="hero-tarjeta">
+          <div class="tarjeta-cyber">
+            <div class="tarjeta-header">
+              <span class="tag-tech">Perfil Técnico</span>
+              <div class="icono-monitor">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Cuadro de Foto -->
+            <div class="contenedor-foto">
+              <img src="https://images.unsplash.com/photo-1534972195531-a756b1146f35?w=500&q=80" alt="Foto de Luciano" class="foto-perfil">
+            </div>
+
+            <div class="pie-tarjeta">
+              <span class="texto-pie">Terminal / Developer Mode</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- SECCIÓN PROYECTOS -->
+      <section id="proyectos" class="seccion">
+        <div class="seccion-header">
+          <h2 class="seccion-titulo">Proyectos Destacados</h2>
+          <p class="seccion-subtitulo">Sistemas y desarrollos realizados</p>
+        </div>
+
+        <div class="grilla-proyectos">
+          <article class="card-proyecto">
+            <div class="card-img-placeholder">
+              <span class="tag-proyecto">Web App</span>
+            </div>
+            <div class="card-cuerpo">
+              <h3>Panel de Control / Dashboard</h3>
+              <p>Aplicación web con autenticación de usuarios, filtros y base de datos.</p>
+              <div class="tags-skills">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-proyecto">
+            <div class="card-img-placeholder">
+              <span class="tag-proyecto">Seguridad / Backend</span>
+            </div>
+            <div class="card-cuerpo">
+              <h3>Analizador de Logs</h3>
+              <p>Herramienta para procesar eventos y detectar patrones anómalos de tráfico.</p>
+              <div class="tags-skills">
+                <span>Java</span>
+                <span>Estructuras de Datos</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f5ee; /* Fondo crema */
+  color: #222222;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* 1. LAYOUT PRINCIPAL (Dos columnas: Sidebar + Contenido) */
+.contenedor-principal {
+  display: flex;
+  min-height: 100vh;
+ 
+}
+
+
+
+
+/* Sidebar */
+
+
+.sidebar {
+  width: 200px;
+  border-right: 1px solid #dfdbd0;
+  padding: 40px 20px;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  margin-bottom: 15px;
+}
+
+.enlace {
+  text-decoration: none;
+  color: #666666;
+  font-size: 15px;
+}
+
+.enlace:hover,
+.enlace.activo {
+  color: #000000;
+  font-weight: 500;
+}
+
+/* Contenido Principal */
+.contenido {
+  flex: 1;
+  /* Ocupa todo el espacio sobrante */
+}
+
+/* 2. SECCIÓN HERO (Inicio compacto) */
+.seccion-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 50px;
+  border-bottom: 1px solid #dfdbd0;
+  gap: 70px;
+  height: 700px;
+}
+
+.hero-texto {
+ 
+  width: 100%;
+}
+
+.titulo-nombre {
+  font-family: 'DM Serif Display', serif;
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  color: #111111;
+}
+
+.descripcion {
+  font-size: 46px;
+  color: #555555;
+  margin-bottom: 25px;
+}
+
+/* Botones de Redes Sociales */
+.redes-sociales {
+  display: flex;
+  gap: 12px;
+}
+
+.boton-social {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dfdbd0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  text-decoration: none;
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+/* Efecto hover simple */
+.boton-social:hover {
+  background-color: #222222;
+  color: #ffffff;
+  border-color: #222222;
+}
+
+/* Foto Compacta */
+.hero-imagen-contenedor {
+  width: 720px;
+  height: 660px;
+  flex-shrink: 0; /* Evita que la imagen se aplaste */
+}
+
+.hero-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recorta la imagen prolija sin deformarla */
+  border-radius: 4px;
+}
+
+/* 3. SECCIÓN PROYECTOS */
+.seccion-proyectos {
+  padding: 40px 50px;
+  height: 700px;
+}
+
+.titulo-seccion {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.grilla-proyectos {
+  display: flex;
+  gap: 20px;
+}
+
+.tarjeta-proyecto {
+  width: 260px;
+  border: 1px solid #dfdbd0;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.caja-foto-proyecto {
+  width: 100%;
+  height: 140px;
+  background-color: #e0ded8;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.tarjeta-proyecto h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.tarjeta-proyecto p {
+  font-size: 14px;
+  color: #666666;
+}
+
+/* 4. RESPONSIVE BÁSICO (Para celulares / pantallas chicas) */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    flex-direction: column; /* Pasa todo de fila a columna */
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #dfdbd0;
+    padding: 15px;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu li {
+    margin-bottom: 0;
+  }
+
+  .seccion-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .redes-sociales {
+    justify-content: center;
+  }
+
+  .seccion-proyectos {
+    padding: 30px 20px;
+  }
+
+  .grilla-proyectos {
+    flex-direction: column;
+  }
+
+  .tarjeta-proyecto {
+    width: 100%;
+  }
+}
