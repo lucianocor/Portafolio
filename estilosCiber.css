@@ -161,24 +161,9 @@ body {
   border-radius: 12px;
   padding: 20px;
 }
-
-.cabecera-tarjeta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.tag-tecnico {
-  font-size: 12px;
-  font-weight: 700;
-  color: #00e5ff;
-  text-transform: uppercase;
-}
-
 .marco-foto {
   width: 100%;
-  height: 220px;
+  height: 250px;
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid #1e293b;
@@ -188,16 +173,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.pie-tarjeta {
-  margin-top: 12px;
-  text-align: center;
-}
-
-.pie-tarjeta p {
-  font-size: 12px;
-  color: #94a3b8;
 }
 
 /* =========================================
@@ -222,8 +197,10 @@ body {
 }
 
 .grilla-proyectos {
-  display: flex;
-  gap: 20px;
+  
+ flex-wrap: wrap;
+  gap: 25px;
+  
 }
 
 .tarjeta-proyecto {
@@ -232,6 +209,7 @@ body {
   border: 1px solid #1e293b;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .tarjeta-proyecto:hover {

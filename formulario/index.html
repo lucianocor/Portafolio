@@ -5,25 +5,25 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <form>
+    <form  action="email.php" method="POST">
       <h1>Formulario de contacto</h1>
       <div class="form_input">
         <label>Nombre</label>
-        <input type="text" placeholder="Nombre" />
+        <input type="text" name="nombre" placeholder="Nombre" />
       </div>
       <div class="form_input">
         <label>Apellido</label>
 
-        <input type="text" placeholder="Apellido" />
+        <input type="text" name="apellido" placeholder="Apellido" />
       </div>
         
       <div class="form_input">
         <label>Mail</label>
-        <input type="email" placeholder="Correo" />
+        <input type="email" name="mail" placeholder="Correo" />
       </div>
       <div class="form_input">
         <label>Mensaje </label>
-        <textarea placeholder="Mensaje"></textarea>
+        <textarea name="mensaje" placeholder="Mensaje"></textarea>
       </div>
       <div class="boton">
         <input type="submit" value="Enviar" />
@@ -31,7 +31,7 @@
 
       <details>
         <summary>¿Quieres agregar algo?</summary>
-        <p><textarea placeholder="Mensaje"></textarea></p>
+        <p><textarea name="mensaje" placeholder="Mensaje"></textarea></p>
       </details>
     </form>
   </body>
