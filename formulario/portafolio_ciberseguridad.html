@@ -24,7 +24,8 @@
       <a href="#inicio" class="enlace">Inicio</a>
       <a href="#proyectos" class="enlace">Proyectos</a>
       <a href="#habilidades" class="enlace">Habilidades</a>
-      <a href="#contacto" class="btn-contacto">Contacto</a>
+      <a href="#materias" class="enlace">Materias</a>
+      <a href="#formulario" class="btn-contacto" class="formulario">Contacto</a>
     </nav>
   </header>
 
@@ -77,7 +78,69 @@
       </div>
 
     </section>
+    
+    <section id="materias" class="seccion-materias">
+      <div class="encabezado-seccion">
+        <h2>Seguimiento de Materias</h2>
+        <p>Registro y control de estado académico</p>
+      </div>
 
+      <div class="panel-materias">
+       
+        <form id="form-materia" class="form-crud-materia">
+          <div class="campo-crud">
+            <label >Nombre de la materia</label>
+            <input type="text" id="nombre-materia" name="nombre"  placeholder="Ej: programacion I" required>
+          </div>
+            <input type="hidden" id="id-materia" name="id" value="">
+          <div class="campo-crud">
+            <label >Condición</label>
+            <select id="estado-materia" name="estado" class="select-crud" required>
+              <option value="Cursando">Cursando</option>
+              <option value="Regular">Regularizada</option>
+              <option value="Aprobada">Aprobada</option>
+              <option value="Libre">Libre</option>
+            </select>
+          </div>
+
+          <div class="campo-crud">
+            <label >Año</label>
+            <input type="number" id="anio-materia"  name="anio-mate" min="1" max="5" placeholder="Ej: 1° Año">
+          </div>
+
+          <!-- Reemplazá el botón actual por este bloque dentro del <form id="form-materia"> -->
+        <div class="botones-crud">
+          <button type="submit" id="btn-guardar" class="btn-azul btn-crud">Guardar</button>
+          <button type="button" id="btn-cancelar" class="btn-borde btn-crud" style="display: none;">Cancelar</button>
+        </div>
+        </form>
+
+        <!-- Visualización de Registros (Read / Delete) -->
+        <div class="tabla-contenedor">
+          <table class="tabla-materias">
+            
+              <tr>
+                <th>Materia</th>
+                <th>Estado</th>
+                <th>Año</th>
+                <th>Acciones</th>
+              </tr>
+            
+            <tbody id="lista-materias">
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
     <!-- SECCIÓN PROYECTOS -->
     <section id="proyectos" class="seccion-proyectos">
       
@@ -118,12 +181,44 @@
             </div>
           </div>
         </div>
+          </section>
+      
+      
+      <section id ="formulario">
+            <form  action="email.php" method="POST">
+          <h1>Formulario de contacto</h1>
+          <div class="form_input">
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Nombre" />
+          </div>
+          <div class="form_input">
+            <label>Apellido</label>
 
-      </div>
-
-    </section>
+            <input type="text" name="apellido" placeholder="Apellido" />
+          </div>
+            
+          <div class="form_input">
+            <label>Mail</label>
+            <input type="email" name="email" placeholder="Correo" />
+          </div>
+          <div class="form_input">
+            <label>Mensaje </label>
+            <textarea name="mensaje1" placeholder="Mensaje"></textarea>
+          </div>
+          <div class="boton">
+            <input type="submit" value="Enviar" />
+          </div>
+          <div class="form_input">
+          <details>
+            <summary >¿Quieres agregar algo?</summary>
+            <p><textarea name="mensaje2" placeholder="Mensaje"></textarea></p>
+          </details>
+          </div>
+        </form>
+      </section>
+    
 
   </main>
-
+<script src="materias.js"></script>
 </body>
 </html>
